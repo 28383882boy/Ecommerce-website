@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Ecommerce Website</title>
+	<title>Product Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<h1>Welcome to My Ecommerce Website</h1>
+		<div class="logo">
+			<a href="#">E-Commerce</a>
+		</div>
 		<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Shop</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Cart</a></li>
 			</ul>
 		</nav>
 	</header>
-	
+
 	<main>
-		<section>
-			<h2>Featured Products</h2>
-			<ul>
-				<li>
-					<h3>Product 1</h3>
-					<img src="product1.jpg" alt="Product 1">
-					<p>Description of Product 1</p>
-					<button>Add to Cart</button>
-				</li>
-				<li>
-					<h3>Product 2</h3>
-					<img src="product2.jpg" alt="Product 2">
-					<p>Description of Product 2</p>
-					<button>Add to Cart</button>
-				</li>
-				<li>
-					<h3>Product 3</h3>
-					<img src="product3.jpg" alt="Product 3">
-					<p>Description of Product 3</p>
-					<button>Add to Cart</button>
-				</li>
-			</ul>
-		</section>
-		
-		<section>
-			<h2>About Us</h2>
-			<p>We are a company that sells high-quality products at affordable prices. We take pride in providing excellent customer service and fast shipping.</p>
-		</section>
-		
-		<section>
-			<h2>Contact Us</h2>
-			<p>Phone: Your phone no</p>
-			<p>Email: your email</p>
-			<p>Address:Your adress</p>
-		</section>
+		<div class="product-image">
+			<img src="https://via.placeholder.com/300x300.png" alt="Product Image">
+		</div>
+		<div class="product-details">
+			<h1>Product Name</h1>
+			<p class="product-description">A awesome product.</p>
+			<p class="product-price">$19.99</p>
+			<form>
+				<label for="quantity">Quantity:</label>
+				<input type="number" name="quantity" id="quantity" value="1">
+				<button type="submit">Add to Cart</button>
+			</form>
+		</div>
 	</main>
-	
+
 	<footer>
-		<p>Copyright &copy; RyugacodeZ website</p>
+		<p>&copy; 2023 E-Commerce. All rights reserved.</p>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
